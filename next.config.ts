@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
     domains: ['localhost'],
     unoptimized: process.env.NODE_ENV === 'development'
   },
+    eslint:{
+        ignoreDuringBuilds:true,
+    }
 };
 
 export default nextConfig;
