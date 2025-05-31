@@ -1,6 +1,3 @@
-// src/types/portfolio.type.ts
-
-// --- Named exports for types (standard) ---
 export type PortfolioCategory =
   | "social-media-marketing"
   | "video-editing"
@@ -12,7 +9,7 @@ export interface CategoryInfo {
   id: PortfolioCategory;
   title: string;
   description: string;
-  displayTitle: string; // For display purposes (e.g., "Social Media Marketing")
+  displayTitle: string;
 }
 
 export interface Testimonial {
@@ -23,8 +20,8 @@ export interface Testimonial {
 
 export interface ImageInfo {
   path: string;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 
 export interface Project {
@@ -47,19 +44,3 @@ export interface PortfolioFilterProps {
   activeCategory: PortfolioCategory;
   setActiveCategory: (category: PortfolioCategory) => void;
 }
-
-// --- Runtime constants ---
-const PortfolioCategories: PortfolioCategory[] = [
-  "social-media-marketing",
-  "video-editing",
-  "graphics",
-  "paid-advertising",
-  "consulting",
-];
-
-// --- Default export for values only ---
-const portfolioTypes = {
-  PortfolioCategories,
-};
-
-export default portfolioTypes;
