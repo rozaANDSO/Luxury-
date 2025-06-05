@@ -63,7 +63,7 @@ export default function ContactPage() {
                   id="name"
                   name="name"
                   required
-                  placeholder="John Doe"
+                  placeholder="Roza belay"
                   className="mt-2 block w-full rounded-lg border-gray-300 bg-white px-4 py-3 text-gray-900 shadow-sm transition-colors focus:border-gold focus:ring-gold"
                 />
               </div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                   id="email"
                   name="email"
                   required
-                  placeholder="john@example.com"
+                  placeholder="luxury@example.com"
                   className="mt-2 block w-full rounded-lg border-gray-300 bg-white px-4 py-3 text-gray-900 shadow-sm transition-colors focus:border-gold focus:ring-gold"
                 />
               </div>
